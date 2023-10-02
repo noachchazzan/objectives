@@ -1,0 +1,26 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    background-color: #cacaca;
+    padding: 10px;
+    margin: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.item {
+    background-color: red;
+    color: white;
+    font-size: 35px;
+    padding: 20px;
+    margin: 10px;
+}
+.items-5 {
+    height: 150px;
+}
