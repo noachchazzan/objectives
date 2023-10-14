@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-1.css">
+
+    <style>
+       
+        h1 { 
+            font-size: 1.5em; 
+            font-weight: strong; 
+            color: wheat; 
+            text-align: center; 
+            text-decoration: wavy;
+            width: auto; 
+            margin-left: auto; 
+            margin-right: auto;
+        }
+        
+        p {
+            color: black;
+            align-self: center;
+            margin: 2px solid green;
+            padding: 2px solid green;
+            border: 2px solid green;
+            width: auto;
+            height: auto;
+        }
+        table {
+    width: 80%; 
+    margin: 2em auto; 
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #2c3e50;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+thead {
+    background-color: #2c3e50;
+    color: white;
+}
+
+tbody tr:hover {
+    background-color: rgba(44, 62, 80, 0.1);
+}
+
+        .container {
+            display: flex;
+            align-items: center; /* Vertical alignment of child elements */
+            justify-content: space-between; /* Horizontal alignment of child elements */
+            flex-wrap: wrap;
+            
+        }
+        .container div {
+            padding: 2px;
+            margin: 2px; 
+            border: 2px solid green;
+        }
+        .container div img {
+            width: 250px;
+            height: 250px;
+        }
+        .items {
+            flex: 1;
+        }
+        .items-5 img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.items-5 img:hover {
+    transform: scale(1.05);
+}
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>Landing Page</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="user.html" href="index.html">Dashboard(Home)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="user.html">User Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Learn More</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-1.html">Sign Up</a>
+                    </li>
+                </ul>
+
+                <!-- Search bar in the middle -->
+                <form class="d-flex me-auto mb-2 mb-lg-0">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+                    </div>
+                </form>
+
+                <!-- User details on the far right -->
+                <div class="d-flex align-items-center">
+                    <div  class="activity-container"><img style="height: 55px; width: 55px;" src="image-icon-bell-active.jpg" /></div>
+                    <a href="user.html"><img src="founder-image-3.jpg" alt="User Image" class="rounded-circle me-2" style="width: 40px; height: 40px;"></a>
+                    <div>
+                       <a href="user.html" ><span class="text-light">Username</span><br></a>
+                        <small class="text-light">Provider</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <h1>Welcome to InstiBanc</h1>
+    <p>
+        InstiBanc is your one stop app to get your buisness and personal  financial transactions processed, secured, confirmed, 
+        and semi-documented all within a predefined "radius" or proximity defined by the user. With "I-B" YOU can meet people in real 
+        life for services, "jobs", points-of-transactions and other things pre-defined by the user. This is all done discretely 
+        and out of the scope of traditional financial systems so you are safe and free from scammers in the REAL WORLD. I emphasis real world because in today's 
+        high tech driven society preforming finacial transactions have become more eaiser and so did the potential for 'error' which we define as 
+        unwarranted or unwanted results. Privacy and the mimicking of real world transactions via a electronic medium is our goal. Consider this app akin to real cash. </p>
+    </p>
+    <div class="container">
+        <div class="items-1 items">
+            <h2>Proximity Transactor</h2>
+            <p>Bring authenticity to online transactions. With InstiBanc's Proximity Transactor, ensure that both parties are physically present. It's not just about transferring funds; it's about building trust in every transaction. Whether you're paying rent or purchasing a product, proximity matters.</p>
+            <img src="tenor.gif">
+        </div>
+        <div class="items-2 items">
+            <h2>Ultimate Discretion</h2>
+            <p>Your financial activities are your business. At InstiBanc, we prioritize your privacy. Our Ultimate Discretion feature ensures your transactions remain confidential, blending the convenience of online payments with the privacy of cash.</p>
+            <img src="image-money-e.jpg">
+        </div>
+
+        <div class="items-3 items">
+            <h2>Crypto Ready</h2>
+            <p>"Step into the future of transactions. With InstiBanc, you're not just limited to traditional currencies. Dive into the world of cryptocurrency and make secure, efficient trades with the same ease as any other transaction. Ready to embrace the future? We are.</p>
+            <img src="image-money-1.jpg">
+        </div>
+        <div class="items-4 items">
+            <h2>Secure and Safe</h2>
+            <p>Rest easy with InstiBanc's robust security protocols. Beyond just a transaction platform, we're a shield that protects your finances from potential threats. Every transaction, every exchange, every moment — we've got your back.</p>
+            <img src="image-privacy.jpg">
+        </div>
+        <div class="items-5 items">
+            <h3>Reliablea OR JUST LIKE CASH</h3>
+            <p>Ever missed the tangibility of cash in online transactions? With InstiBanc, experience the reliability and authenticity of cash payments in a modern, digitized form. It's more than just an app; it's a revolution in online payments.</p>
+            <img src="image-banker.gif">
+        </div>
+    </div>
+
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <h2 class="text-center mb-4">Recent Anonymous Transactions</h2>
+            <table class="table table-striped table-bordered table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Transaction ID</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Receiver</th>
+                        <th>Hash</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ABCD1234</td>
+                        <td>10/01/2023</td>
+                        <td>$250.50</td>
+                        <td>User5678</td>
+                        <td>1a2b3c4d5e6f7...</td>
+                        <td>Encrypted</td>
+                    </tr>
+
+                    <tr>
+                        <td>ABCD1234</td>
+                        <td>10/01/2023</td>
+                        <td>$250.50</td>
+                        <td>User5678</td>
+                        <td>1a2b3c4d5e6f7...</td>
+                        <td>Failed</td>
+                    </tr>
+
+                    <tr>
+                        <td>ABCD1234</td>
+                        <td>10/05/2023</td>
+                        <td>$250.50</td>
+                        <td>User5678</td>
+                        <td>1a2b3c4d5e6f7...</td>
+                        <td>Encrypted</td>
+                    </tr>
+
+                    <tr>
+                        <td>ABCD1234</td>
+                        <td>10/02/2023</td>
+                        <td>$250.50</td>
+                        <td>User5678</td>
+                        <td>1a2b3c4d5e6f7...</td>
+                        <td>Pending</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5 text-center">
+    <a href="page-1.html" class="btn btn-primary">Create Account</a>
+    <a href="user.html" class="btn btn-secondary">Login</a>  <!-- Assuming the login page will be named 'login.html' -->
+</div>
+
+
+        <a href="https://app.popsilla.com/com.android.vending?bingcust=jtl5&msclkid=aa13922b41391e44027bf70b1746f8e2&utm_source=bing&utm_medium=cpc&utm_campaign=BF%20-%20PS%20-%20USA%20-%20Desktop&utm_term=app%20store&utm_content=Google%20Play%20Store" style="align-self: center;">Click here to obtain</a>
+
+        <footer style="background-color: #2c3e50; color: white; padding: 20px 0; text-align: center;">
+            <p>&copy; 2023 InstiBanc. All Rights Reserved.</p>
+            <p><a href="#" style="color: white; text-decoration: none; margin-right: 15px;">Terms of Service</a> | <a href="#" style="color: white; text-decoration: none; margin-left: 15px;">Privacy Policy</a></p>
+        </footer>
+
+    <img src="1980818558-square.jpg" alt="User Image" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+
+</body>
+</html>

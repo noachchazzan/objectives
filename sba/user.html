@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>User Information Page</title>
+</head>
+<body>
+
+<!-- Navigation bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="index.html" href="index.html">Dashboard(Home)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="user.html">User Page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Learn More</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page-1.html">Sign Up</a>
+                </li>
+            </ul>
+
+            <!-- Search bar in the middle -->
+            <form class="d-flex me-auto mb-2 mb-lg-0">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+                </div>
+            </form>
+
+            <!-- User details on the far right -->
+            <div class="d-flex align-items-center">
+                <div  class="activity-container"><img style="height: 55px; width: 55px;" src="image-icon-bell-active.jpg" /></div>
+                <a href="user.html"><img src="founder-image-3.jpg" alt="User Image" class="rounded-circle me-2" style="width: 40px; height: 40px;"></a>
+                <div>
+                   <a href="user.html" ><span class="text-light">Username</span><br></a>
+                    <small class="text-light" style=".text-light:hover{print-color-adjust: aliceblue;}">Provider</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container mt-5">
+    <div class="row">
+        <!-- Left Section -->
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <img src="founder-image-2.jpg" alt="User's Profile Picture" class="img-fluid rounded-circle mb-3" style="height: 120px; width: 120px;">
+                    <h3>Alyssa Chazzan Carter</h3>
+                    <p>Prophetess, Spiritualist and Trainer</p>
+                    <p>Bay Area, San Francisco, CA</p>
+                    <button class="btn btn-primary">Hire/Book</button>
+                    <button class="btn btn-secondary">Message</button>
+                    <!-- Social Media Links -->
+                    <div class="mt-3">
+                        <a href="">Twitter<i class="bi bi-twitter"></i></a>
+                        <a href="https://www.facebook.com/AlyssaGadsonFit/about">Facebook<i class="bi bi-github"></i></a>
+                        <a href="https://www.youtube.com/redirect?event=channel_description&redir_token=QUFFLUhqazlPUnFGT1NVOS02XzF2SkNDQTN3NnNRT20wZ3xBQ3Jtc0ttaXA4LW93am0xQWNzRlUzdmxQMkx4Ul9yb1hWTlVBTWVQckZfdGJ0dDZuVHMzQnl5SmRhd1JnNmJLajRHSzg4dDJxTzJuc0lXVlBPVUVzako2UXRQQnVHOGlJdkp6ZV9hbXJWQnNXRW9hTnZJUWJrcw&q=WWW.Instagram.com%2FFitathomewithaly__">Instagram<i class="bi bi-instagram"></i></a>
+                        <a href="https://www.instagram.com/pottymouthnutritionist/?hl=en">Youtube<i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Right Section -->
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <!-- User Details -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Full Name</h5>
+                            <p>Johnathan Smith</p>
+                            <h5>Email</h5>
+                            <p><email>yourbestathleticself@gmail.com</email></p>
+                            <h5>Phone</h5>
+                            <p>(097) 234-5678</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Mobile</h5>
+                            <p>(098) 765-4321</p>
+                            <h5>Address</h5>
+                            <p>Bay Area, San Francisco, CA</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Bio</h5>
+                            By me living my truth, I hope to inspire you to live yours.
+                            As I continue to evolve, Im openly sharing my journey in every way,
+                            Making space & Inspiring others to evolve in their journey!
+                        </div>
+                    </div>
+
+                    <!-- Project Status -->
+                    <h5 class="mt-4">Escrow Level</h5>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 88%;" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">Fitness (Nutrionist)</div>
+                    </div>
+
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 77.7%;" aria-valuenow="77.7" aria-valuemin="0" aria-valuemax="100">Fitness(Training)</div>
+                    </div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 77.7%;" aria-valuenow="77.7" aria-valuemin="0" aria-valuemax="100">Plumbing</div>
+                    </div>
+                    <!-- ... (Add more progress bars as per the image) ... -->
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Left Comment Section -->
+        <div class="col-md-8">
+            <div class = "card">
+                <div class = "card-body">
+                    <!-- Reviews Section -->
+            <h5 class="mt-4">Reviews:</h5>
+            
+            <!-- Single Review -->
+            <div class="mb-3 border rounded p-2">
+                <h6 class="mb-1">Alex Thompson</h6>
+                <img src="review.jpg" alt="User's Profile Picture" class="img-fluid rounded mb-3" style="height: 99px; width: 99px;">
+                <p><strong>Alex Thompson:</strong> Stellar service! Communication was top-notch. Will use again!</p>
+            </div>
+
+            <!-- Another Review -->
+            <div class="mb-3 border rounded p-2">
+                <img src="pro.jpg" alt="User's Profile Picture" class="img-fluid rounded mb-3" style="height: 99px; width: 99px;">
+
+                
+                <p><strong>Sarah Adams:</strong> Job was done quickly, but I expected more detail. Satisfactory overall.</p>
+            </div>
+
+            <!-- Another Review -->
+            <div class="mb-3 border rounded p-2">
+                <p><strong>Michael Brown:</strong> Wasn't sure at first, but turned out great!</p>
+            </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Right Actions Section -->
+        <div class="col-md-4">
+            <div class = "card">
+                <div class = "card-body">
+                    <div id="userPhotosCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-bs-target="#userPhotosCarousel" data-bs-slide-to="0" class="active"></li>
+                          <li data-bs-target="#userPhotosCarousel" data-bs-slide-to="1"></li>
+                          <li data-bs-target="#userPhotosCarousel" data-bs-slide-to="2"></li>
+                          <li data-bs-target="#userPhotosCarousel" data-bs-slide-to="3"></li>
+                          <li data-bs-target="#userPhotosCarousel" data-bs-slide-to="4"></li>
+                          <li data-bs-target="#userPhotosCarousel" data-bs-slide-to="5"></li>
+                          <li data-bs-target="#userPhotosCarousel" data-bs-slide-to="6"></li>
+                        </ol>
+                      
+                        <!-- Slides -->
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="founder-image-2.jpg" class="d-block w-100" alt="User's First Work">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Philosopher</h5>
+                              <p>Teacher of men and women alike.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="image-founder.jpg" class="d-block w-100" alt="User's Second Work">
+                          
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Philosopher</h5>
+                                <p>Teacher of men and women alike.</p>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images.jpg" class="d-block w-100" alt="User's Second Work">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Philosopher</h5>
+                                <p>Teacher of men and women alike.</p>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="DWcmB4wVQAAdG-B.jpg" class="d-block w-100" alt="User's Second Work">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Philosopher</h5>
+                                <p>Teacher of men and women alike.</p>
+                              </div>
+                          </div>
+                          <!-- ... add more .carousel-item for additional images ... -->
+                          <div class="carousel-item">
+                            <img src="125370303_1096641360794607_4108173488488407725_n.jpg" class="d-block w-100" alt="User's Second Work">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Philosopher</h5>
+                                <p>Teacher of men and women alike.</p>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="310430619_615183967004159_3394209072983321987_n.jpg" class="d-block w-100" alt="User's Second Work">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Philosopher</h5>
+                                <p>Teacher of men and women alike.</p>
+                              </div>
+                          </div>
+                           
+                          <div class="carousel-item">
+                            <img src="311075625_615183963670826_217743193913599676_n.jpg" class="d-block w-100" alt="User's Second Work">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Philosopher</h5>
+                                <p>Teacher of men and women alike.</p>
+                              </div>
+                          </div>
+                        </div>
+                      
+                        <!-- Controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#userPhotosCarousel" data-bs-slide="prev">
+                            
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#userPhotosCarousel" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer style="background-color: #2c3e50; color: white; padding: 20px 0; text-align: center;">
+    <p>&copy; 2023 InstiBanc. All Rights Reserved.</p>
+    <p><a href="#" style="color: white; text-decoration: none; margin-right: 15px;">Terms of Service</a> | <a href="#" style="color: white; text-decoration: none; margin-left: 15px;">Privacy Policy</a></p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
