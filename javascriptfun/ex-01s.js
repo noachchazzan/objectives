@@ -17,12 +17,13 @@ if (num > 0 && num > 100) {
 else {
     console.log("other");
 }
+
 // else-if statement
-let grade = 79;
+function grademe(grade) {
 if (grade >= 90) {
     console.log("A");
 } else if (grade >= 80 && grade < 90) {
-        console.log("B");
+    console.log("B");
 } else if (grade >= 70 && grade < 80) {
     console.log("C");
 } else if (grade >= 55 && grade < 70) {
@@ -32,6 +33,10 @@ if (grade >= 90) {
     console.log("F");
 }
 
+
+}
+console.log("the grade for " + 89 + " is:");
+grademe(91);
 // switch statement 
 /*
  in JavaScript's switch statement, the value for each case is not always a string. While you can use strings, you can also use numbers, booleans, 
@@ -101,3 +106,52 @@ function processArray(x,y){
 }
 let doubledNumbers = processArray(numbers, double);
 console.log(doubledNumbers); // Expected Output: [2, 4, 6, 8, 10]
+// --------------------------------------------------------------------------- //
+function forEach(arr, callback){
+    let narr = [];
+    for (let i = 0; i < arr.length; i++){
+      narr.push(callback(arr[i]));
+    }
+    return narr;
+  }
+  function map (arr, callback){
+    
+      return forEach(arr, callback);
+  }
+  // Uncomment these to check your work!
+   console.log(typeof forEach); // should log: 'function'
+   forEach(['a','b','c'], i => console.log(i)); // should log: 'a', 'b', 'c'
+   console.log(typeof map); // should log: 'function'
+   console.log(map([3,4,5], n => n - 2)); // should log: [1, 2, 3]
+//-----------------------------------------------------------------------------//
+
+
+function createFunction() {
+    // When function is created it stores its label and its function defintion in memory. 
+    function multiplyBy2 (num){
+        return num+2;
+    }
+    return multiplyBy2;
+}
+
+const secondLabel = createFunction; // Assigned function definitin created in global memory to secondLabel. Not the label.
+// above points to function label createFunction
+const generatedFunc = createFunction(); // 
+const result = generatedFunc(3); // creates generated func label in memory and stores the output of the function() after it is RAN only. 
+// new label for generatedFunc is multiplyBy2
+// generateFunc is going to equal what ever createFunction() -> WILL EQUAL
+// "aka run me once and see what I return. "
+
+// generatedFunc = the-function-definition formely given the label of multiply 2. 
+
+function outer () {
+    let counter = 0;
+    function incrementCounter () {
+        counter ++;
+    }
+    return incrementCounter;
+}
+
+const myNewFunction = outer();
+myNewFunction();
+myNewFunction();

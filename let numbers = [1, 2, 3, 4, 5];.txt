@@ -1,0 +1,14 @@
+let numbers = [1, 2, 3, 4, 5];
+
+function double(n) {
+  return n * 2;
+}
+function processArray(x,y){
+  for (let i = 0; i < x.length; i++) {
+    x[i]=x[double(i)];
+    console.log(x);
+  }
+  return x;
+}
+let doubledNumbers = processArray(numbers, double);
+console.log(doubledNumbers); // Expected Output: [2, 4, 6, 8, 10]
