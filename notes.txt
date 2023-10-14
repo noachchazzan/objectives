@@ -13,6 +13,7 @@ Add an html rule selector to your CSS file, and set the box-sizing property to b
   box-sizing: border-box;
 }
 --------
+why,when, how and who:
 1. it is my passion and i studied it in college
 2. It is important because computer science and computer programming is my passion. It pays good but also I would do this job if I didn't get paid at all and I could work for free aka open source projects. 
 3. i need to make money 
@@ -23,6 +24,12 @@ Add an html rule selector to your CSS file, and set the box-sizing property to b
 better at it and the world and industry is changing so it is only natural that I adapt to the modern world and use what God gave me thus I want a career in technology given changin trends. 
 --------
 
-who i am , what i do and why i do it. brief decription of why i am great and what i am about 
+who i am , what i do and why i do it. brief decription of why i am great and what i am about ->
+
+pitch:
 
 I am currently a studnet at perscholas. Prior to this I use to work in IT, did sales in finance and technoloy and attended Rutgers for computer sciecne and econonmics. I have prior experience coding at a start up company dealing with python. My favorite technology to work with is javascript due to its importance in the online universe. I want to get a job working with javas script, python and utilizing my knowledge of sql and other databases to become a full stack engineer. I am also interested in implementing data stuctured and algorithms to better round my skill set. 
+
+---------------------------
+
+
