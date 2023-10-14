@@ -115,34 +115,50 @@ After running the above tasks, console.log the index of "Fast and Furious."x - 1
 We removed it from the array. What value do we get when we look for the index of something that is not in the array?
 Thought Question: We declared the variable favMovies with const, and yet we were allowed to change the array. Weird? Should we have used let?
 The commit message should read: "Methods Revisited answered" x -- arrays weird 
-*/
+---------------------------------------------------------------------------------------*/
+
+console.log("Where is Waldo");
 const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
                       ["Lucinda", "Jacc", "Neff", "Snoop"],
                       ["Petunia", ["Baked Goods", "Waldo"]]];
-                      
 
-/*
-Where is Waldo
-With the following multi-dimensional array:
-Remove Eggbert (hint look at the slice/splice methods).
-Change "Neff" to "No One".
-Access and console.log "Waldo".
+whereIsWaldo.splice(1,1)
+whereIsWaldo[1][2]="No one";
+console.log(whereIsWaldo)
+console.log(whereIsWaldo[2][1][1]);
+/* With the following multi-dimensional array:
+Remove Eggbert (hint look at the slice/splice methods). x
+Change "Neff" to "No One". x
+Access and console.log "Waldo". x
 The commit message should read: "Where is Waldo answered"
-Excited Kitten
-Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
+*/
+console.log("Excited Kitten"); 
+// code here 
+
+
+/*write code that logs "Love me, pet me! HSSSSSS!" 20 times.
 For every even number in your loop, log "...human... why you taking pictures of me...?", "...the catnip made me do it...", or "...why does the red dot always get away...?" at random.
 Need some hints? Click here!
 Image of cat with funny quote about dot
-The commit message should read: "Excited Kittens answered"
-Find the Median
-Find the median number in the following nums array, then console.log that number.
-Hint: If you check the length of the array divided by two, you might get not get a whole number. In which case, look into Math.floor().
+The commit message should read: "Excited Kittens answered"------------------------
+*/
 const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+
+console.log("Find the Median");
+// code here 
+/*Find the median number in the following nums array, then console.log that number.
+Hint: If you check the length of the array divided by two, you might get not get a whole number. In which case, look into Math.floor().
 // Expected output: 15
 The commit message should read: "Find the Median answered"
+
+
+------------------------------------
 Hungry for More?
 The remainder of these problems are optional; however, we encourage more practice whenever you have the time for it!
 Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript. Use this data to answer the following questions.
+*/
+// code here 
+console.log("Hungary for More?");
 const kristynsCloset = [
   "left shoe",
   "cowboy boots",
@@ -152,31 +168,51 @@ const kristynsCloset = [
   "yellow knit hat",
   "marshmallow peeps"
 ];
+
+
+
+/*-----------------------------------
 // Thom's closet is more complicated. Check out this nested data structure!!
+
+*/
+console.log("Alien Attire");
 const thomsCloset = [
-  [
-    // These are Thom's shirts
-    "grey button-up",
-    "dark grey button-up",
-    "light blue button-up",
-    "blue button-up",
-  ],[
-    // These are Thom's pants
-    "grey jeans",
-    "jeans",
-    "PJs"
-  ],[
-    // Thom's accessories
-    "wool mittens",
-    "wool scarf",
-    "raybans"
-  ]
-];
-Alien Attire
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+/*
+
 Kristyn's left shoe has traveled through time and space and turned up in Thom's accessories drawer!
 Remove Kristyn's shoe from the array and save it to the variable kristynsShoe.
 Use that variable to add Kristyn's lost shoe to Thom's accessories array.
 The commit message should read: "Kristyn's lost shoe found"
+
+*/
+// code here 
+console.log("Dress Up");
+
+/*
+
+/*
+
+*/
+/// code here 
+/*
 Dress Us Up
 Modify your code to put together three separate outfits for Kristyn and Thom. Put the output in a sentence to tell us what we'll be wearing. Mix and match!
 The commit message should read: "Kristyn and Thom have their outfits ready for class - array practice"
