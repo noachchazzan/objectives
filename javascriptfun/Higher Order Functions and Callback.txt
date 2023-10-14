@@ -1,0 +1,26 @@
+Higher Order Functions and Callbacks: With repect to function then the functionality of the function can be different too and the data too. They fulfill the following...
+* takes one or more functions as arguments (i.e. a procedural parameter, which is a parameter of a procedure that is itself a procedure),
+* returns a function as its result.
+
+So basically like a lambda which is like a function in a function that returns either a value or anotehr function.... so on. 
+
+/----------/
+let numbers = [1, 2, 3, 4, 5];
+
+function double(n) {
+
+  return n * 2;
+}
+function processArray(x,y){
+  for (let i = 0; i < x.length; i++) {
+    x[i]=y(x[i]);
+    console.log(x[i]);
+  }
+  return x;
+}
+/----------/
+
+
+ functions in js = first class OBJECTS: This means they can co exist with anfd can be treated like any other js OBJECTS which entails 1.) assigned to variables and properties of other objects, 2.) passed as arguments into functions and 3.) returned as values from functions. BUT functions can be invoked/called/runned UNLIKE OTHER OBJECTS. 
+/------
+Closure: When our functions get called. we create a live store of data(local memory/varaible environment/stae) for that function's execution context. Functions after 

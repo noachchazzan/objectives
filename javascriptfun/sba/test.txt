@@ -1,0 +1,284 @@
+To represent the user profile page as depicted in the image using Bootstrap's grid system and other CSS properties, you need to organize the contents in a structured manner with defined borders, margins, paddings, and layouts. Here's an example of how you can structure your user profile page:
+
+html
+
+<!-- ... (Same head and nav as before) ... -->
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Left Section -->
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <img src="founder-image-2.jpg" alt="User's Profile Picture" class="img-fluid rounded-circle mb-3" style="height: 120px; width: 120px;">
+                    <h3>John Smith</h3>
+                    <p>Full Stack Developer</p>
+                    <p>Bay Area, San Francisco, CA</p>
+                    <button class="btn btn-primary">Follow</button>
+                    <button class="btn btn-secondary">Message</button>
+                    <!-- Social Media Links -->
+                    <div class="mt-3">
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-github"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Right Section -->
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <!-- User Details -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Full Name</h5>
+                            <p>Johnathan Smith</p>
+                            <h5>Email</h5>
+                            <p>example@example.com</p>
+                            <h5>Phone</h5>
+                            <p>(097) 234-5678</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Mobile</h5>
+                            <p>(098) 765-4321</p>
+                            <h5>Address</h5>
+                            <p>Bay Area, San Francisco, CA</p>
+                        </div>
+                    </div>
+
+                    <!-- Project Status -->
+                    <h5 class="mt-4">Project Status</h5>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">Web Design</div>
+                    </div>
+                    <!-- ... (Add more progress bars as per the image) ... -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+----
+<div class="user-info">
+    <h2>User Information</h2>
+    <div class="profile-picture">
+        <img src="founder-image-2.jpg" alt="User's Profile Picture" style="height: 45px; width: 45px;">
+    </div>
+    <ul>
+        <li>Name: <span id="user-name">John Doe</span></li>
+        <li>Bio: <span id="user-bio">A professional with 5 years of experience...</span></li>
+        <li>Last Login: <span id="last-login">October 6, 2023</span></li>
+        <li>Online?: <span id="online-status">Yes</span></li>
+        <li>Date Signed In: <span id="date-signed-in">October 1, 2023</span></li>
+        <li>Type of Business Serviced: <span id="business-type">Home Repairs</span></li>
+        <li>Business Address: <span id="business-address">123 Main St., New York, NY</span></li>
+        <li>Contact: <span id="contact-phone">123-456-7890</span>, <span id="contact-email">john.doe@example.com</span></li>
+        <li>Verification Status: <span id="verification-status">Verified User</span></li>
+    </ul>
+</div>
+
+<div class="offered-services">
+    <h2>Offered Services</h2>
+    <ul>
+        <li>Home Electrical Repairs</li>
+        <li>Plumbing Services</li>
+    </ul>
+</div>
+
+<div class="user-ratings">
+    <h2>Ratings & Reviews</h2>
+    <p>Average Rating: <span id="average-rating">4.5/5</span></p>
+
+    <!-- Review 1 -->
+    <div class="individual-review">
+        <div class="reviewer-info">
+            <img src="founder-image-3.jpg" alt="Alex Thompson" class="reviewer-picture" style="height: 45px; width: 45px;">
+            <span class="reviewer-name">Alex Thompson</span>
+            <span class="review-date">Sep 20, 2023</span>
+        </div>
+        <div class="review-content">
+            <div class="star-rating">★★★★★</div>
+            <p>Stellar service! The transaction was smooth, and communication was top-notch. Will definitely use again!</p>
+            <div class="review-actions">
+                <button class="like-review">Like</button>
+                <button class="refute-review">Refute</button>
+                <button class="respond-review">Respond</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Other reviews would follow a similar structure -->
+
+</div>
+
+<div class="transaction-history">
+    <h2>Transaction History</h2>
+    <ul>
+        <li>Electrical repair for home on Sep 25, 2023</li>
+        <li>Plumbing service on Sep 20, 2023</li>
+    </ul>
+</div>
+
+<div class="user-gallery">
+    <h2>Gallery</h2>
+    <!-- Gallery items, such as images of work done by the user -->
+</div>
+
+<div class="other-attributes">
+    <h2>Other Attributes</h2>
+    <ul>
+        <li>Certifications: Electrical Engineer, Plumber</li>
+        <li>Years of Experience: 5</li>
+    </ul>
+</div>
+----------
+ <div class="col-md-4">
+            <div class = "card">
+                <div class = "card-body">
+                    <div id="userPhotosCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-bs-target="#userPhotosCarousel" data-bs-slide-to="0" class="active"></li>
+                          <li data-bs-target="#userPhotosCarousel" data-bs-slide-to="1"></li>
+                          <li data-bs-target="#userPhotosCarousel" data-bs-slide-to="2"></li>
+                          <li data-bs-target="#userPhotosCarousel" data-bs-slide-to="3"></li>
+                          <li data-bs-target="#userPhotosCarousel" data-bs-slide-to="4"></li>
+                          <li data-bs-target="#userPhotosCarousel" data-bs-slide-to="5"></li>
+                          <li data-bs-target="#userPhotosCarousel" data-bs-slide-to="6"></li>
+                        </ol>
+                      
+                        <!-- Slides -->
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="founder-image-2.jpg" class="d-block w-100" alt="User's First Work">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Philosopher</h5>
+                              <p>Teacher of men and women alike.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="image-founder.jpg" class="d-block w-100" alt="User's Second Work">
+                            <h5>Daughter of the Universe</h5>
+                            <p>She is the modern day female Messiah sent to us by the Universe(G-D) to teach man the ways 
+                                of life.</p>
+                            </p>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images.jpg" class="d-block w-100" alt="User's Second Work">
+                            <h5>Devine Wisdom</h5>
+                            <p> Through her divine wisdom man can find meaning in life.</p>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="founder-image-3.jpg" class="d-block w-100" alt="User's Second Work">
+                            <h5>Fitness as a call to the Hellenistic Past</h5>
+                            <p>Being a fitness expert she has knowledge and wisdom which is a call to the time of the Hellenistic 
+                                Past.</p>
+                            </p>
+                          </div>
+
+                          <div class="carousel-item active">
+                            <img src="125370303_1096641360794607_4108173488488407725_n.jpg" class="d-block w-100" alt="User's First Work">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Life Coach</h5>
+                              <p>Having gone through her Life with untold hardships her 
+                                life coaching skills are backed by over coming the unthinkiable and 
+                                becoming succesful in life and beyond.
+                              </p>
+                            </div>
+                          </div>
+
+                          <div class="carousel-item active">
+                            <img src="310430619_615183967004159_3394209072983321987_n.jpg" class="d-block w-100" alt="User's First Work">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Image of G-D</h5>
+                              <p>Made in the image of G-D she is the perfect human and her life 
+                                is an example of what mankind was meant to be.</p>
+                              </p>
+                            </div>
+                    
+                          </div>
+
+                          
+                        </div>
+
+
+
+                        ------
+
+
+                        <!-- Bottom Right Actions Section -->
+<div class="col-md-4">
+    <div class="card">
+        <div class="card-body">
+            <div id="userPhotosCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#userPhotosCarousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#userPhotosCarousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#userPhotosCarousel" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#userPhotosCarousel" data-bs-slide-to="3"></li>
+                    <li data-bs-target="#userPhotosCarousel" data-bs-slide-to="4"></li>
+                    <li data-bs-target="#userPhotosCarousel" data-bs-slide-to="5"></li>
+                </ol>
+
+                <!-- Slides -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="founder-image-2.jpg" class="d-block w-100" alt="User's First Work">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Philosopher</h5>
+                            <p>Teacher of men and women alike.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image-founder.jpg" class="d-block w-100" alt="User's Second Work">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Daughter of the Universe</h5>
+                            <p>She is the modern day female Messiah sent to us by the Universe(G-D) to teach man the ways of life.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images.jpg" class="d-block w-100" alt="User's Third Work">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Divine Wisdom</h5>
+                            <p>Through her divine wisdom, man can find meaning in life.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="founder-image-3.jpg" class="d-block w-100" alt="User's Fourth Work">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Fitness as a call to the Hellenistic Past</h5>
+                            <p>Being a fitness expert she has knowledge and wisdom which is a call to the time of the Hellenistic Past.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="125370303_1096641360794607_4108173488488407725_n.jpg" class="d-block w-100" alt="User's Fifth Work">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Life Coach</h5>
+                            <p>Having gone through her life with untold hardships, her life coaching skills are backed by overcoming the unthinkable and becoming successful in life and beyond.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="310430619_615183967004159_3394209072983321987_n.jpg" class="d-block w-100" alt="User's Sixth Work">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Image of G-D</h5>
+                            <p>Made in the image of G-D, she is the perfect human, and her life is an example of what mankind was meant to be.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#userPhotosCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#userPhotosCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
