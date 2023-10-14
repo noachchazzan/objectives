@@ -134,11 +134,17 @@ The commit message should read: "Where is Waldo answered"
 */
 console.log("Excited Kitten"); 
 // code here 
-
-
-/*write code that logs "Love me, pet me! HSSSSSS!" 20 times.
-For every even number in your loop, log "...human... why you taking pictures of me...?", "...the catnip made me do it...", or "...why does the red dot always get away...?" at random.
-Need some hints? Click here!
+let resC = ["...human... why you taking pictures of me...?", "...the catnip made me do it...", "...why does the red dot always get away...?"]
+for (let i = 1; i<=20;i++) {
+    if (i%2==0){console.log( )} else
+    console.log("Love me, pet me! HSSSSSS!");
+    const randomIndex = Math.floor(Math.random() * resC.length);
+    const randomElement = resC[randomIndex];
+    console.log(randomElement);
+}
+/*write code that logs 20 times. x
+For every even number in your loop, log, , or  at random. x
+Need some hints? Click here! x
 Image of cat with funny quote about dot
 The commit message should read: "Excited Kittens answered"------------------------
 */
