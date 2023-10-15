@@ -148,14 +148,26 @@ Need some hints? Click here! x
 Image of cat with funny quote about dot
 The commit message should read: "Excited Kittens answered"------------------------
 */
+let median = 0;
 const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
-
 console.log("Find the Median");
+nums.sort((a,b)=> a - b);
+
+  if (nums.length%2===0) {
+    median = (nums[(nums.length/2)-1]+nums[(nums.length/2)]/2);
+    console.log(nums.sort())
+  } else {
+    console.log(nums.sort())
+    median = nums[Math.floor(nums.length/2)];
+  }
+
+console.log(median);
+
 // code here 
 /*Find the median number in the following nums array, then console.log that number.
 Hint: If you check the length of the array divided by two, you might get not get a whole number. In which case, look into Math.floor().
-// Expected output: 15
-The commit message should read: "Find the Median answered"
+// Expected output: 15 x
+The commit message should read: "Find the Median answered" x
 
 
 ------------------------------------
