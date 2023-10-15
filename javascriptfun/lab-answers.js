@@ -219,6 +219,18 @@ const thomsCloset = [
   ];
   thomsCloset[2].push(kristynsShoe);
 
+
+/*
+Dress Us Up
+Modify your code to put together three separate outfits for Kristyn and Thom. Put the output in a sentence to tell us what we'll be wearing. Mix and match!
+The commit message should read: "Kristyn and Thom have their outfits ready for class - array practice" x
+Dirty Laundry
+Time to do laundry. Loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.x
+The commit message should read: "Washed dirty laundry"x
+Inventory
+Thom wants to do inventory on his closet. Using bracket notation, log the arrays containing all of Thom's shirts, pants, and accessories.
+The commit message should read: "Hungry for More: Complete"
+*/
 // code here 
 console.log("Dress Up");
 console.log(thomsCloset);
@@ -226,17 +238,7 @@ console.log(kristynsCloset);
 let outfit1 = [kristynsCloset[0],thomsCloset[1][0],thomsCloset[0][1]];
 let outfit2 = [kristynsCloset[1],thomsCloset[2][2],thomsCloset[0][1]];
 let outfit3 = [kristynsCloset[2],thomsCloset[1][1],thomsCloset[1][3]];
-/*
-Dress Us Up
-Modify your code to put together three separate outfits for Kristyn and Thom. Put the output in a sentence to tell us what we'll be wearing. Mix and match!
-The commit message should read: "Kristyn and Thom have their outfits ready for class - array practice"
-Dirty Laundry
-Time to do laundry. Loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
-The commit message should read: "Washed dirty laundry"
-Inventory
-Thom wants to do inventory on his closet. Using bracket notation, log the arrays containing all of Thom's shirts, pants, and accessories.
-The commit message should read: "Hungry for More: Complete"
-*/
 
-
-/// code here 
+for (let i in kristynsCloset) {
+  console.log("WHIRR: Now washing " + kristynsCloset[i]);
+}
