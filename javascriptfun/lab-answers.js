@@ -176,6 +176,13 @@ The remainder of these problems are optional; however, we encourage more practic
 Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript. Use this data to answer the following questions.
 */
 // code here 
+/*
+
+Kristyn's left shoe has traveled through time and space and turned up in Thom's accessories drawer!
+Remove Kristyn's shoe from the array and save it to the variable kristynsShoe.
+Use that variable to add Kristyn's lost shoe to Thom's accessories array.
+The commit message should read: "Kristyn's lost shoe found"
+*/
 console.log("Hungary for More?");
 const kristynsCloset = [
   "left shoe",
@@ -186,13 +193,11 @@ const kristynsCloset = [
   "yellow knit hat",
   "marshmallow peeps"
 ];
+let kristynsShoe = kristynsCloset.shift();
+thomsCloset[2].push(kristynsShoe)
+console.log(kristynsShoe + " was moved.");
 
-
-
-/*-----------------------------------
 // Thom's closet is more complicated. Check out this nested data structure!!
-
-*/
 console.log("Alien Attire");
 const thomsCloset = [
     [
@@ -213,14 +218,7 @@ const thomsCloset = [
       "raybans"
     ]
   ];
-/*
 
-Kristyn's left shoe has traveled through time and space and turned up in Thom's accessories drawer!
-Remove Kristyn's shoe from the array and save it to the variable kristynsShoe.
-Use that variable to add Kristyn's lost shoe to Thom's accessories array.
-The commit message should read: "Kristyn's lost shoe found"
-
-*/
 // code here 
 console.log("Dress Up");
 
