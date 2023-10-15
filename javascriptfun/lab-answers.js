@@ -228,8 +228,8 @@ Dirty Laundry
 Time to do laundry. Loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.x
 The commit message should read: "Washed dirty laundry"x
 Inventory
-Thom wants to do inventory on his closet. Using bracket notation, log the arrays containing all of Thom's shirts, pants, and accessories.
-The commit message should read: "Hungry for More: Complete"
+Thom wants to do inventory on his closet. Using bracket notation, log the arrays containing all of Thom's shirts, pants, and accessories. x
+The commit message should read: "Hungry for More: Complete" x
 */
 // code here 
 console.log("Dress Up");
@@ -242,3 +242,7 @@ let outfit3 = [kristynsCloset[2],thomsCloset[1][1],thomsCloset[1][3]];
 for (let i in kristynsCloset) {
   console.log("WHIRR: Now washing " + kristynsCloset[i]);
 }
+
+console.log("Thom's Shirts:", thomsCloset[0]);
+console.log("Thom's Pants:", thomsCloset[1]);
+console.log("Thom's Accessories:", thomsCloset[2]);
