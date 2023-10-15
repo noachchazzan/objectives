@@ -194,7 +194,6 @@ const kristynsCloset = [
   "marshmallow peeps"
 ];
 let kristynsShoe = kristynsCloset.shift();
-thomsCloset[2].push(kristynsShoe)
 console.log(kristynsShoe + " was moved.");
 
 // Thom's closet is more complicated. Check out this nested data structure!!
@@ -218,16 +217,15 @@ const thomsCloset = [
       "raybans"
     ]
   ];
+  thomsCloset[2].push(kristynsShoe);
 
 // code here 
 console.log("Dress Up");
-
-/*
-
-/*
-
-*/
-/// code here 
+console.log(thomsCloset);
+console.log(kristynsCloset);
+let outfit1 = [kristynsCloset[0],thomsCloset[1][0],thomsCloset[0][1]];
+let outfit2 = [kristynsCloset[1],thomsCloset[2][2],thomsCloset[0][1]];
+let outfit3 = [kristynsCloset[2],thomsCloset[1][1],thomsCloset[1][3]];
 /*
 Dress Us Up
 Modify your code to put together three separate outfits for Kristyn and Thom. Put the output in a sentence to tell us what we'll be wearing. Mix and match!
@@ -239,3 +237,6 @@ Inventory
 Thom wants to do inventory on his closet. Using bracket notation, log the arrays containing all of Thom's shirts, pants, and accessories.
 The commit message should read: "Hungry for More: Complete"
 */
+
+
+/// code here 
